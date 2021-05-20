@@ -15,7 +15,7 @@
     <!-- HEADER -->
 
     <!-- DATA ALBUMS -->
-    <?php include_once __DIR__ . '/../partials/datas/database.php';?>
+    <?php include_once __DIR__ . '/database.php';?>
 
 
 
