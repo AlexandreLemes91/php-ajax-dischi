@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milestone 1</title>
+    <!-- STYLE -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <div class="container">
+                <div class="logo-container">
+                    <img src="../img/logo.png" alt="logo">
+                </div>
+            </div>
+        </header>
+    
+        <div class="albums container">
+            
+            
+            <div class="card" v-for='album in albums'>
+                <div class="album-img-container">
+                    <img :src="album.poster" :alt="album.title">
+                </div>
+                <h3>{{album.title}}</h3>
+                <h5>{{album.author}}</h5>
+                <h3>{{album.year}}</h3>
+                <h5>{{album.genre}}</h5>
+            </div>
+    
+        </div>
+    </div>
+
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <!-- js -->
+    <script src="./js/script.js"></script>
+
+</body>
+</html>

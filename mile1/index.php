@@ -11,7 +11,7 @@
 <body>
     
     <!-- HEADER -->
-    <?php include_once __DIR__ . '/../partials/themeplates/header.php' ?>
+    <?php include_once __DIR__ . '/./partials/themeplates/header.php' ?>
     <!-- HEADER -->
 
     <!-- DATA ALBUMS -->
